@@ -29,9 +29,11 @@ These features provide **decentralization, security, and transparency** in the l
 ## **Getting Started**
 
 ### **Requirements**
-- **Git**: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
+- **Git**: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  
   Verify with: `git --version`
-- **Foundry**: [Install Foundry](https://getfoundry.sh/)  
+- **Foundry**: [Install Foundry](https://getfoundry.sh/)
+  
   Verify with: `forge --version`
 
 ---
@@ -39,9 +41,13 @@ These features provide **decentralization, security, and transparency** in the l
 ### **Quickstart**
 
 \`\`\`bash
+
 git clone https://github.com/Jamill-hallak/Foundry-Smart-Contract-Lottery.git
+
 cd foundry-smart-contract-lottery-cu
+
 forge build
+
 \`\`\`
 
 ---
@@ -51,18 +57,24 @@ forge build
 ### **Run Local Blockchain**
 Start a local blockchain using **Anvil**:  
 \`\`\`bash
+
 make anvil
+
 \`\`\`
 
 ### **Test the Contract**
 Run all tests locally:  
 \`\`\`bash
+
 forge test
+
 \`\`\`
 
 Run forked tests against **Sepolia**:  
 \`\`\`bash
+
 forge test --fork-url $SEPOLIA_RPC_URL
+
 \`\`\`
 
 ---
@@ -72,20 +84,22 @@ forge test --fork-url $SEPOLIA_RPC_URL
 1. **Set Environment Variables**  
    Create a `.env` file with:  
    \`\`\`bash
+   
    SEPOLIA_RPC_URL=<Your Sepolia RPC URL>
    PRIVATE_KEY=<Your Metamask Private Key>
+   
    \`\`\`
 
-2. **Get Testnet ETH**  
+3. **Get Testnet ETH**  
    Visit [faucets.chain.link](https://faucets.chain.link/) to receive **Sepolia ETH**.
 
-3. **Deploy Contract**  
+4. **Deploy Contract**  
    Deploy to **Sepolia**:  
    \`\`\`bash
    make deploy ARGS="--network sepolia"
    \`\`\`
 
-4. **Register Chainlink Automation**  
+5. **Register Chainlink Automation**  
    Register a new upkeep at [Chainlink Automation](https://automation.chain.link/new) to automate the lottery draw.
 
 ---
