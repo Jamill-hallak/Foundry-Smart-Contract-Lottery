@@ -39,7 +39,7 @@ These features provide **decentralization, security, and transparency** in the l
 ### **Quickstart**
 
 \`\`\`bash
-git clone https://github.com/Cyfrin/foundry-smart-contract-lottery-cu
+git clone https://github.com/Jamill-hallak/Foundry-Smart-Contract-Lottery.git
 cd foundry-smart-contract-lottery-cu
 forge build
 \`\`\`
